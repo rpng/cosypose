@@ -20,3 +20,6 @@ dist/
 *.so
 build/
 *.temp
+*.swp
+*.swo
+

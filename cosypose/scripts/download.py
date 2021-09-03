@@ -151,6 +151,7 @@ def main():
 
 def run_rclone(cmd, args, flags):
     rclone_cmd = ['rclone', cmd] + args + flags + ['--config', str(RCLONE_CFG_PATH)]
+    print("rclone command to run:", rclone_cmd)
     logger.debug(' '.join(rclone_cmd))
     subprocess.run(rclone_cmd)
 
